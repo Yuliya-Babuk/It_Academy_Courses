@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TypeConversion", "TypeConve
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortingNotes", "SortingNotes\SortingNotes.csproj", "{D4B4073E-28FA-4609-8CBD-763413EF8D2B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoanCalculator", "LoanCalculator\LoanCalculator.csproj", "{D2D52FE8-AA5E-4AFD-9618-62ADB774A18E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D4B4073E-28FA-4609-8CBD-763413EF8D2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4B4073E-28FA-4609-8CBD-763413EF8D2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4B4073E-28FA-4609-8CBD-763413EF8D2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2D52FE8-AA5E-4AFD-9618-62ADB774A18E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2D52FE8-AA5E-4AFD-9618-62ADB774A18E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2D52FE8-AA5E-4AFD-9618-62ADB774A18E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2D52FE8-AA5E-4AFD-9618-62ADB774A18E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
