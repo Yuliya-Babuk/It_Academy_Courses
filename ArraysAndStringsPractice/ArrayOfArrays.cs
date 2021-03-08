@@ -46,7 +46,7 @@ namespace ArraysAndStringsPractice
             {
                 Console.WriteLine($"Please enter dimension for {i + 1} array: ");
                 int dimensionOfArray = ParseInput();
-
+              //  arrayOfArrays[i] = new int[dimensionOfArray];
                 for (int j = 0; j < dimensionOfArray; j++)
                 {
                     arrayOfArrays[i][j] = ParseInput();

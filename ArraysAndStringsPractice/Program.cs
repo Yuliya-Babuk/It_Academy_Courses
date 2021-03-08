@@ -6,10 +6,10 @@ namespace ArraysAndStringsPractice
     {
         static void Main(string[] args)
         {
-            new OneDimArray().Run();
-            new TwoDimArray().Run();
-            new VowelsCalculation().Run();
-            new CharsReplacement().Run();
+            //new OneDimArray().Run();
+            //new TwoDimArray().Run();
+            //new VowelsCalculation().Run();
+            //new CharsReplacement().Run();
             new ArrayOfArrays().Run();
            
         }
