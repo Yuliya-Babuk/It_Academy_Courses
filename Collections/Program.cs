@@ -15,20 +15,50 @@ namespace Collections
             {
                 int.TryParse(Console.ReadLine(), out int output);
                 initialList.Add(output);
-
-                int integer = 0;
-                int.TryParse((initialList[i].ToString().ToCharArray().Last()).ToString(), out integer);
-                outputList.Add(integer);
             }
+
             Console.WriteLine("List of last integers from initial list:");
-            foreach (int integer in outputList)
+
+            foreach (int integer in initialList)
             {
-                Console.WriteLine(integer);
+                outputList.Add(int.Parse(integer.ToString().ToCharArray().Last().ToString()));
             }
 
+            foreach (int integer in outputList)
+                Console.WriteLine(integer);
+
+            List<int> initialListOfNumbers = new List<int>();
+            Console.WriteLine("Enter initial list of 6 integers:");
+            for (int i = 0; i < 6; i++)
+            {
+                int.TryParse(Console.ReadLine(), out int output);
+                initialListOfNumbers.Add(output);
+            }
+            Dictionary<int, int> result = initialListOfNumbers
+                .OrderBy(n => n)
+                .GroupBy(n => n)
+                .ToDictionary(key => key.Key, val => val.Count());
+
+            Console.WriteLine("=====================================\nNumber Count");
+            foreach (KeyValuePair<int, int> item in result)
+            {
+                Console.WriteLine(item.Key + "       " + item.Value);
+            }
+
+            var data = initialListOfNumbers
+                .OrderBy(n => n)
+                .GroupBy(n => n)
+                .Select(n => new { Number = n.Key, Count = n.Count() });
+
+            Console.WriteLine("=====================================\nNumber Count");
+            foreach (var item in data)
+            {
+                Console.WriteLine(item.Number + "       " + item.Count);
+            }
         }
 
     }
 
 }
+
 
