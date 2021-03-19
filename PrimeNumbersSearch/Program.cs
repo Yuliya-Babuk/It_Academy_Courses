@@ -4,7 +4,7 @@ namespace PrimeNumbersSearch
 {
     class Program
 
-        // first oprion - my
+        // first option - my
     {
         static void Main(string[] args)
 

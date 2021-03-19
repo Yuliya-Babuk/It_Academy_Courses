@@ -27,12 +27,17 @@ namespace Collections
             foreach (int integer in outputList)
                 Console.WriteLine(integer);
 
+
             List<int> initialListOfNumbers = new List<int>();
-            Console.WriteLine("Enter initial list of 6 integers:");
-            for (int i = 0; i < 6; i++)
+            var rndm = new Random();
+            for (int i = 0; i < rndm.Next(5, 10); i++)
             {
-                int.TryParse(Console.ReadLine(), out int output);
-                initialListOfNumbers.Add(output);
+                initialListOfNumbers.Add(rndm.Next(10));
+            }
+
+            foreach (var item in initialListOfNumbers)
+            {
+                Console.Write(item + "\t");
             }
             Dictionary<int, int> result = initialListOfNumbers
                 .OrderBy(n => n)
@@ -48,12 +53,14 @@ namespace Collections
             var data = initialListOfNumbers
                 .OrderBy(n => n)
                 .GroupBy(n => n)
-                .Select(n => new { Number = n.Key, Count = n.Count() });
+                .Select(n => $"{n.Key} repeats {n.Count()} time(s)");
+            //.Select(n => new { Number = n.Key, Count = n.Count() }); //creating anonymous class
 
-            Console.WriteLine("=====================================\nNumber Count");
+            //Console.WriteLine("=====================================\nNumber Count");
             foreach (var item in data)
             {
-                Console.WriteLine(item.Number + "       " + item.Count);
+                //Console.WriteLine(item.Number + "       " + item.Count);
+                Console.WriteLine(item);
             }
         }
 
