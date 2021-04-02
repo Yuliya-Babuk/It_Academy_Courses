@@ -22,7 +22,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackAndQueue", "StackAndQu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassWork(StackExample)", "ClassWork(StackExample)\ClassWork(StackExample).csproj", "{E20E2DB9-7EDB-4FC5-B0C2-E31B244F7836}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamTask", "ExamTask\ExamTask.csproj", "{E8CD7C21-ADF1-44C0-B4D2-BB858A311374}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExamTask", "ExamTask\ExamTask.csproj", "{E8CD7C21-ADF1-44C0-B4D2-BB858A311374}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagingStudyingProcess", "ManagingStudyingProcess\ManagingStudyingProcess.csproj", "{40A36B31-EA12-46A1-9AD4-47888511658E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -74,6 +76,10 @@ Global
 		{E8CD7C21-ADF1-44C0-B4D2-BB858A311374}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8CD7C21-ADF1-44C0-B4D2-BB858A311374}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8CD7C21-ADF1-44C0-B4D2-BB858A311374}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40A36B31-EA12-46A1-9AD4-47888511658E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40A36B31-EA12-46A1-9AD4-47888511658E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40A36B31-EA12-46A1-9AD4-47888511658E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40A36B31-EA12-46A1-9AD4-47888511658E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
