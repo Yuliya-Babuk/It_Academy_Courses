@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace ManagingStudyingProcess
 {
-    class Student
+       class Student : IStudent, IGradable
     {
         public string Name { get; set; }
 
@@ -14,6 +13,9 @@ namespace ManagingStudyingProcess
 
         public string GroupNumber { get; set; }
 
+        public event EventHandler<GradeEventArgs> GradeGiven;
+
+
         public Student(string name, string surname, string groupNumber)
         {
             Name = name;
@@ -21,6 +23,8 @@ namespace ManagingStudyingProcess
             GroupNumber = groupNumber;
             Marks = new List<int>();
         }
+
+
         //public override bool Equals(Student student)
         //{
         //    return base.Equals(student);
@@ -33,6 +37,7 @@ namespace ManagingStudyingProcess
         public void GiveGrade(int mark)
         {
             Marks.Add(mark);
+            GradeGiven?.Invoke(this, new GradeEventArgs() { Grade = mark });
         }
 
     }
