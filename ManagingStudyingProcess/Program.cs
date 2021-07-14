@@ -5,13 +5,12 @@ namespace ManagingStudyingProcess
 {
     class Program
 
-
     {
         static void Main(string[] args)
         {
 
             Groups groups = new Groups();
-
+            Math.Po
             bool canContinue = true;
             while (canContinue)
             {

@@ -32,6 +32,20 @@ namespace ClassWorkStackExample
     {
         static void Main(string[] args)
         {
+            //разбить список на 2 списка - один с элементами больше среднего , второй - меньше среднего
+
+            var numbers = new[] { 3, 5, 76, 89, 55, 4, 3 };
+
+            var result = numbers.GroupBy(n => n > numbers.Average())
+                .Select(g => g.ToList()).ToList();
+
+            foreach (var list in result)
+            {
+                Console.WriteLine(string.Join(",", list));
+            }
+            return;
+
+            
             Stack<string> stack = new Stack<string>();
             Queue<string> queue = new Queue<string>();
 

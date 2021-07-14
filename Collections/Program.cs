@@ -8,8 +8,14 @@ namespace Collections
     {
         static void Main(string[] args)
         {
-            List<int> initialList = new List<int>();
-            List<int> outputList = new List<int>();
+           
+            List<int> initialList = new List<int>() { 1, 2, 3 };
+            List<int> outputList = new List<int>() { 3, 4, 5 };
+            var result1 = initialList.Union(outputList).ToList();
+
+            return;
+            //List<int> initialList = new List<int>();
+            //List<int> outputList = new List<int>();
             Console.WriteLine("Enter initial list of 5 integers:");
             for (int i = 0; i < 5; i++)
             {
